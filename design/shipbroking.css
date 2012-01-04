@@ -788,7 +788,38 @@ body {
 	background: #fff;
 }
 
-# Stype for item properties
+.sb-login #overview {
+    margin: 16px 16px 0;
+    padding: 10px 0;
+}
+.sb-login {
+    background: -moz-linear-gradient(center top , #FFFFFF 5%, #F2F2F2 90%) repeat scroll 0 0 transparent;
+    border: 2px solid #D6D6D6;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    padding: 16px 0 0;
+    position: relative;
+    margin: 20px 100px 20px 100px;
+    width: 400px;
+}
+
+.sb-login-frame {
+    background: -moz-linear-gradient(center top , #FFFFFF 5%, #F2F2F2 90%) repeat scroll 0 0 transparent;
+    border: 2px solid #D6D6D6;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    padding: 50px 50px 50px 50px;
+    position: relative;
+    margin: 20px 20px 100px 100px;
+    width: 600px;
+}
+
+.sb-login-color {
+    background-image: -moz-linear-gradient(center top , #636363, #636363);
+    border: 0px solid #DE9600;
+}
+
+# Style for item properties
 
 .sb-item #overview {
     margin: 16px 16px 0;
