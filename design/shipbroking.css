@@ -585,6 +585,14 @@ display:inline
     background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll 0 -510px transparent;
     height: 39px;
     padding: 0 5px;
+    margin: 16px 140px 0 0;
+}
+
+.bar {
+ 	background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll 0 -470px transparent;
+    width: 100%;
+    margin: 16px 140px 0;
+    
 }
 
 ul#list-nav li a {
@@ -810,7 +818,8 @@ body {
     overflow: hidden;
     padding: 50px 50px 50px 50px;
     position: relative;
-    margin: 20px 20px 100px 100px;
+    margin: 20px 20px 10px 140px;
+#    margin: 16px 140px 0 0;
     width: 600px;
 }
 
@@ -988,8 +997,8 @@ body {
     overflow: hidden;
     padding: 16px 0 0;
     position: relative;
-    margin: 16px 16px 0;
-    width: 960px;
+    margin: 16px 140px 0;
+    width: 975px;
 }
 
 
@@ -1111,48 +1120,6 @@ body {
 
 .sb-list tr:hover .sb-visible-on-select {
     visibility: visible;
-}
-
-.chromemenu {
-    font-weight: bold;
-#    width: 99%;
-}
-.chromemenu:after {
-    clear: both;
-    content: ".";
-    display: block;
-    height: 0;
-    visibility: hidden;
-}
-.chromemenu ul {
-#    background: url("media/chromebg.gif") repeat-x scroll center center transparent;
-    border: 1px solid #BBBBBB;
-    margin: 0;
-    padding: 5px 0;
-    text-align: left;
-#    width: 100%;
-}
-.chromemenu ul li {
-    display: inline;
-}
-.chromemenu ul li a {
-    border-right: 1px solid #BBBBBB;
-    color: #494949;
-    margin: 0;
-    padding: 5px 8px;
-    text-decoration: none;
-}
-.chromemenu ul li a:hover, .chromemenu ul li a.current {
-#    background: url("media/chromebg2.gif") repeat-x scroll center center transparent;
-}
-
-.grid-f #content {
-    float: left;
-    width: 66.5%;
-}
-.grid-f #extra {
-    float: right;
-    width: 31.25%;
 }
 
 .mod-simple {
