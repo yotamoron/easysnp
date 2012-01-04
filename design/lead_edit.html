@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="shipbroking.css" type="text/css" media="screen" />
+
+<script language="javascript" type="text/javascript" src="datetimepicker.js">
+</script>
+
+<div style="float:right;width:280px;word-spacing:6px;font-size:100%;padding-right:400px;padding-top:7px;white-space:nowrap;text-align:right;">
+	<a href="#">Account</a>
+	|
+	<a href="#">Logout</a>
+</div>
+<br>
+<div class=wrapper>	
+	<ul id="list-nav" class="nav">
+	<li class="tab"><a href="index.html"><span>Home</span></a></li>
+	<li class="tab"><a href="leads.html">Leads</a></li>
+	<li class="tab"><a href="#">Vessels</a></li>
+	<li class="tab"><a href="#">Inquiries</a></li>
+	<li class="tab"><a href="#">Contacts</a></li>
+	<li  class="tab"><a href="#">Tasks</a></li>
+	</ul>
+	<input id="main-search-box" type="text" autocomplete="off" value="" name="keywords" placeholder="Search...">
+	<input type="submit" value="Search" name="search">
+</div>
+ 
+</head>
+<body>
+
+<div class="profile-header">
+	<div style="float:right;width:280px;word-spacing:6px;font-size:100%;padding-right:100px;padding-top:0px;white-space:nowrap;text-align:right;">
+		<a href="#">Save
+		<img src="add_lead.png" alt="Save Lead" width="32" height="32" border="0" />
+		</a>
+		<a href="#">Cancel
+		<img src="delete.png" alt="Cancel Lead" width="32" height="32" border="0" />
+		</a>
+	</div>
+
+<table id="lead" class="sb-item">
+	<thead>
+		<tr>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><span><strong>ID:</strong></span>
+			<td><span>5100746</span></td>
+		</tr>
+		<tr>
+			<td><span><strong>Description:</strong></span>
+			<td><input id="input-box" type="text" autocomplete="off" value="MART KING MARITIME"></td>
+		</tr>
+		<tr>
+			<td><span><strong>Creation Date:</strong></span>
+			<td>
+			<!--
+			<input type="Text" id="demo1" text="19-10-2011" maxlength="25" size="25"><a href="javascript:NewCal('demo1','ddmmmyyyy',true,24)"><img src="images/cal.gif" width="16" height="16" border="0" alt="Pick a date"></a>
+			-->
+			<span>19-10-2011</span>
+			</td>
+		</tr>
+		<tr>
+			<td><span><strong>Status:</strong></span>
+			<td>
+					<select id="Items" class="selectbox" name="Items">
+						<option class="/search?trk=advsrch" value="Pending" data-li-search-action="/search/fpsearch">Pending</option>
+						<option value="In Progress" data-li-search-action="/signal/">In Progress</option>
+						<option class="/jobs?search=&trk=hb_advjs" value="Waiting" data-li-search-action="/jsearch">Waiting</option>
+						<option value="Completed" data-li-search-action="/csearch/results">Completed</option>
+					</select>
+			</td>
+		</tr>
+		<tr>
+			<td><span><strong>Vessel:</strong></span>
+			<td><a href="#">AAA MARITIME INC.</a>
+				<input type="submit" value="..." name="search">
+			</td>
+		</tr>
+		<tr>
+			<td><span><strong>Inquiry:</strong></span>
+			<td><a href="#">ZZZ MARITIME INC.</a>
+				<input type="submit" value="..." name="search">
+			</td>
+		</tr>
+	</tbody>
+</table>
+<br>
+</div>
+</body>
+</html>
