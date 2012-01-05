@@ -1,6 +1,6 @@
 ul#list-nav {
 list-style:none;
-margin:20px;
+margin:10px 5px 10px 10px;
 padding:0;
 #width:525px
 width:800px
@@ -221,7 +221,7 @@ div.alert.notice.alert-details, div.alert.attention.alert-details {
     width: 18px;
 }
 .tabs {
-    background: url("http://static02.linkedin.com/scds/common/u/img/bg/bg_sprites_tabs.png") repeat-x scroll 0 3px transparent;
+#    background: url("http://static02.linkedin.com/scds/common/u/img/bg/bg_sprites_tabs.png") repeat-x scroll 0 3px transparent;
     height: 26px;
     margin-bottom: 10px;
 }
@@ -239,8 +239,7 @@ div.alert.notice.alert-details, div.alert.attention.alert-details {
     float: left;
 }
 .tabs li {
-    background: url("http://static02.linkedin.com/scds/common/u/img/bg/bg_sprites_tabs.png") no-repeat scroll 0 -47px transparent;
-    margin: 0;
+#    background: url("http://static02.linkedin.com/scds/common/u/img/bg/bg_sprites_tabs.png") no-repeat scroll 0 -47px transparent;
     padding: 0;
 }
 .tabs li.selected {
@@ -252,6 +251,7 @@ div.alert.notice.alert-details, div.alert.attention.alert-details {
     cursor: pointer;
     text-align: center;
     text-decoration: none;
+    margin: 10px
 }
 .tabs li.selected a, .tabs li.selected strong {
     background: url("http://static02.linkedin.com/scds/common/u/img/bg/bg_sprites_tabs.png") no-repeat scroll 100% -100px transparent;
@@ -591,8 +591,7 @@ display:inline
 .bar {
  	background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll 0 -470px transparent;
     width: 100%;
-    margin: 16px 140px 0;
-    
+    margin: 16px 140px 0;   
 }
 
 ul#list-nav li a {
@@ -649,7 +648,7 @@ border-left:1px solid #fff;
 #global-search .search-go:hover {
     background-position: -9px -1200px;
 }
-#main-search-box {
+.main-search-box {
     -moz-border-bottom-colors: none;
     -moz-border-image: none;
     -moz-border-left-colors: none;
@@ -662,8 +661,9 @@ border-left:1px solid #fff;
     font-size: 12px;
     height: 16px;
     line-height: 12px;
-    padding: 4px 2px 0;
-    width: 211px;
+    padding: 4px 2px 2px 2px;
+    margin: 8px 4px ;
+    width: 160px;
 }
 .tr #main-search-box, .fr #main-search-box, .pt #main-search-box {
     width: 185px;
