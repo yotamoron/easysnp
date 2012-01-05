@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="/static/shipbroking.css" type="text/css" media="screen" />
+
+<div style="margin:5px 0px 0px 140px">
+		<img src="/static/easysnp_logo.png" alt="logo" width="150" height="47" border="0" />
+</div>
+
+<div style="float:right;width:280px;word-spacing:6px;font-size:100%;padding-right:150px;padding-top:7px;white-space:nowrap;text-align:right;">
+	<a href="#">Account</a>
+	|
+	<a href="login.html">Logout</a>
+</div>
+<br>
+<div class=bar>
+<div class=wrapper>	
+	<ul id="list-nav" class="tabs">
+	<li class="tabs"><a href="index.html"><span>Home</span></a></li>
+	<li class="tabs"><a href="leads.html">Leads</a></li>
+	<li class="tabs"><a href="#">Vessels</a></li>
+	<li class="tabs"><a href="#">Inquiries</a></li>
+	<li class="tabs"><a href="#">Contacts</a></li>
+	<li  class="tabs"><a href="#">Tasks</a></li>
+	<input class="main-search-box" type="text" autocomplete="off" value="" name="keywords" placeholder="Search...">
+	<input type="submit" value="Search" name="search">	
+	</ul>
+</div>
+</div> 
+</head>
+<body>
+<div class="profile-header">
+<div class="sb-header">
+	<h1>My Leads</h1>
+</div>
+<table id="mytable" class="sb-list">
+	<thead>
+		<tr>
+			<th>Lead ID</th>
+			<th>Description</th>
+			<th>Lead Date</th>
+			<th>Status</th>
+			<th>Vessel</th>
+			<th>Inquiry</th>
+		</tr>
+	</thead>
+	<tbody> 
+		<tr>
+			<td><a href="#">5100746</a></td>
+			<td><a href="#">SMART KING MARITIME LTD</a></td>
+			<td>19-10-2011</td>
+			<td>Matching</td>
+			<td><a href="#">AAA MARITIME INC.</a></td>
+			<td><a href="#">ZZZ MARITIME INC.</a></td>
+		</tr>
+		<tr>
+				<td><a href="#">5100746</a></td>
+			<td><a href="#">SMART KING MARITIME LTD</a></td>
+			<td>19-10-2011</td>
+			<td>Matching</td>
+			<td><a href="#">AAA MARITIME INC.</a></td>
+			<td><a href="#">ZZZ MARITIME INC.</a></td>
+		</tr>
+		<tr>
+				<td><a href="#">5100746</a></td>
+			<td><a href="#">SMART KING MARITIME LTD</a></td>
+			<td>19-10-2011</td>
+			<td>Matching</td>
+			<td><a href="#">AAA MARITIME INC.</a></td>
+			<td><a href="#">ZZZ MARITIME INC.</a></td>
+		</tr>
+	</tbody>
+</table>
+<br>
+</div>
+<div class="profile-header">
+<div class="sb-header">
+	<h1>My Tasks</h1>
+	<div style="float:right;width:280px;word-spacing:6px;font-size:100%;padding-right:100px;padding-top:0px;white-space:nowrap;text-align:right;">
+	<a href="#">New
+	<img src="/static/add_new_task.gif" alt="Go to W3Schools!" width="32" height="32" border="0" />
+	</a>
+	</div>
+</div>
+<table id="mytable" class="sb-list">
+	<thead>
+		<tr>
+			<th>Task ID</th>
+			<th>Description</th>
+			<th>Due Date</th>
+			<th>Lead</th>
+			<th>Status</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><a href="#">5100746</a></td>
+			<td>
+			<div>
+				<a href="#">Call US immigration for SMART KING MARITIME LTD</a>
+			</div>
+			<div class="sb-visible-on-select">
+				<a kind="edit" href="javascript:;">Edit</a>
+				&nbsp;|&nbsp;
+				<a href="#">View</a>
+&nbsp;|&nbsp;
+				<a kind="delete" href="javascript:;">Delete</a>
+			</div>
+			</td>
+			<td>19-10-2011</td>
+			<td><a href="#">5100746</a></td>
+			<td>
+				<select id="Items" class="selectbox" name="Items">
+					<option class="/search?trk=advsrch" value="Pending" data-li-search-action="/search/fpsearch">Pending</option>
+					<option value="In Progress" data-li-search-action="/signal/">In Progress</option>
+					<option class="/jobs?search=&trk=hb_advjs" value="Waiting" data-li-search-action="/jsearch">Waiting</option>
+					<option value="Completed" data-li-search-action="/csearch/results">Completed</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><a href="#">5100746</a></td>
+			<td>
+			<div>
+				<a href="#">Call US immigration for SMART KING MARITIME LTD</a>
+			</div>
+			<div class="sb-visible-on-select">
+				<a kind="edit" href="javascript:;">Edit</a>
+				&nbsp;|&nbsp;
+				<a target="http://crisptech.blogspot.com/2011/12/social-robots-or-attack-of-clones-super.html" href="http://crisptech.blogspot.com/2011/12/social-robots-or-attack-of-clones-super.html">View</a>
+&nbsp;|&nbsp;
+				<a kind="delete" href="javascript:;">Delete</a>
+			</div>
+			</td>
+			<td>19-10-2011</td>
+			<td><a href="#">5100746</a></td>
+			<td>
+				<select id="Items" class="selectbox" name="Items">
+					<option class="/search?trk=advsrch" value="Pending" data-li-search-action="/search/fpsearch">Pending</option>
+					<option value="In Progress" data-li-search-action="/signal/">In Progress</option>
+					<option class="/jobs?search=&trk=hb_advjs" value="Waiting" data-li-search-action="/jsearch">Waiting</option>
+					<option value="Completed" data-li-search-action="/csearch/results">Completed</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><a href="#">5100746</a></td>
+			<td>
+			<div>
+				<a href="#">Call US immigration for SMART KING MARITIME LTD</a>
+			</div>
+			<div class="sb-visible-on-select">
+				<a kind="edit" href="javascript:;">Edit</a>
+				&nbsp;|&nbsp;
+				<a target="http://crisptech.blogspot.com/2011/12/social-robots-or-attack-of-clones-super.html" href="http://crisptech.blogspot.com/2011/12/social-robots-or-attack-of-clones-super.html">View</a>
+&nbsp;|&nbsp;
+				<a kind="delete" href="javascript:;">Delete</a>
+			</div>
+			</td>
+			<td>19-10-2011</td>
+			<td><a href="#">5100746</a></td>
+			<td>
+				<select id="Items" class="selectbox" name="Items">
+					<option value="Pending">Pending</option>
+					<option value="In Progress">In Progress</option>
+					<option value="Waiting">Waiting</option>
+					<option value="Completed">Completed</option>
+				</select>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<br>
+</div>
+</body>
+</html>
