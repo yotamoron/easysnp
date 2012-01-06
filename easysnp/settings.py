@@ -107,12 +107,9 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'easysnp.urls'
 
 
-TEMPLATE_DIRS = (
-    os.path.join(PROJECT_DIR, "templates"),
-    # here you can add another templates directory if you wish.
-)
+TEMPLATE_DIRS = ()
 
-INSTALLED_APPS = (
+BASIC_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -123,8 +120,20 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+)
+
+EXTRA_APPS = (
+    'leads',
+    'tasks',
+    # main application comes last since it will catch stuff that other
+    # applications don't handle
     'main',
 )
+
+for app in EXTRA_APPS:
+    TEMPLATE_DIRS += (os.path.join(PROJECT_DIR, app),)
+
+INSTALLED_APPS = BASIC_APPS + EXTRA_APPS
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to

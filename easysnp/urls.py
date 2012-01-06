@@ -1,10 +1,25 @@
 from django.conf.urls.defaults import patterns, include, url
 
+from easysnp.settings import EXTRA_APPS
+
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
 
-urlpatterns = patterns('',
+urlpatterns = []
+
+for app in EXTRA_APPS:
+        try:
+            mod = __import__("easysnp." + app + ".urls", globals(), locals(),
+                    ['urlpatterns'], -1)
+            urlpatterns += mod.urlpatterns
+        except ImportError:
+            # application doesn't have its own urls module - no worries.
+            pass
+
+# 'main' application's patterns come last, since they will catch stuff that all
+# the other applications didn't catch
+urlpatterns += patterns('',
     # Examples:
     # url(r'^$', 'easysnp.views.home', name='home'),
     # url(r'^easysnp/', include('easysnp.foo.urls')),
@@ -14,5 +29,5 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^', 'main.views.index')
 )
+
