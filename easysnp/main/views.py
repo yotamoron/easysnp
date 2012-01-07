@@ -9,4 +9,12 @@ def index(request):
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })
 
+def leads(request):
+    panels = [ ajax.load_url('/leads/leads.html') ]
+    return render_to_response('base.html',
+            {'body': panels, 'title': 'Hello Kitty' })
 
+def lead(request):
+    panels = [ ajax.load_url('/leads/lead.html') ]
+    return render_to_response('base.html',
+            {'body': panels, 'title': 'Hello Kitty' })
