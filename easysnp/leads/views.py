@@ -10,3 +10,4 @@ def leads(request):
 
 def lead(request):
     return render_to_response('lead.html', {})
+

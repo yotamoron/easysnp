@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+    <head>
+        {% include "header.html" %}
+    </head>
+    <body>
+        {% for elem in body %}
+            {{ elem|safe }}
+        {% endfor %}
+        {% include "footer.html" %}
+    </body>
+</html>

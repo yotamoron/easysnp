@@ -18,3 +18,8 @@ def lead(request):
     panels = [ ajax.load_url('/leads/lead.html') ]
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })
+
+def login(request):
+    panels = [ ajax.load_url('/security/login.html') ]
+    return render_to_response('base_menuless.html',
+            {'body': panels, 'title': 'Hello Kitty' })

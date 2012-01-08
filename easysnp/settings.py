@@ -125,9 +125,11 @@ BASIC_APPS = (
 EXTRA_APPS = (
     'leads',
     'tasks',
+    'security',
     # main application comes last since it will catch stuff that other
     # applications don't handle
     'main',
+
 )
 
 for app in EXTRA_APPS:
