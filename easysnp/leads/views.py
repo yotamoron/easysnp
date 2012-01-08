@@ -11,3 +11,5 @@ def leads(request):
 def lead(request):
     return render_to_response('lead.html', {})
 
+def lead_edit(request):
+    return render_to_response('lead_edit.html', {})
