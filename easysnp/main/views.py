@@ -29,3 +29,8 @@ def login(request):
     panels = [ ajax.load_url('/security/login.html') ]
     return render_to_response('base_menuless.html',
             {'body': panels, 'title': 'Hello Kitty' })
+    
+def settings(request):
+    panels = [ ajax.load_url('/security/settings.html') ]
+    return render_to_response('base.html',
+            {'body': panels, 'title': 'Hello Kitty' })
