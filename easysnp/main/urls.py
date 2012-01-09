@@ -11,5 +11,9 @@ urlpatterns = patterns('main.views',
         url(r'^contact.html', 'contact'),
         url(r'^tasks.html', 'tasks'),
         url(r'^task.html', 'task'),
+        url(r'^vessels.html', 'vessels'),
+        url(r'^vessel.html', 'vessel'),
+        url(r'^inquiries.html', 'inquiries'),
+        url(r'^inquiry.html', 'inquiry'),
         url(r'^', 'index')
     )

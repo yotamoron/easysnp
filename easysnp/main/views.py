@@ -54,3 +54,23 @@ def task(request):
     panels = [ ajax.load_url('/tasks/task.html') ]
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })
+
+def vessels(request):
+    panels = [ ajax.load_url('/vessels/vessels.html') ]
+    return render_to_response('base.html',
+            {'body': panels, 'title': 'Hello Kitty' })
+    
+def vessel(request):
+    panels = [ ajax.load_url('/vessels/vessel.html') ]
+    return render_to_response('base.html',
+            {'body': panels, 'title': 'Hello Kitty' })
+
+def inquiries(request):
+    panels = [ ajax.load_url('/inquiries/inquiries.html') ]
+    return render_to_response('base.html',
+            {'body': panels, 'title': 'Hello Kitty' })
+    
+def inquiry(request):
+    panels = [ ajax.load_url('/inquiries/inquiry.html') ]
+    return render_to_response('base.html',
+            {'body': panels, 'title': 'Hello Kitty' })
