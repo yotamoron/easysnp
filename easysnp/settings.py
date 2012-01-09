@@ -126,6 +126,9 @@ EXTRA_APPS = (
     'leads',
     'tasks',
     'security',
+    'contacts',
+    'vessels',
+    'inquiries',
     # main application comes last since it will catch stuff that other
     # applications don't handle
     'main',

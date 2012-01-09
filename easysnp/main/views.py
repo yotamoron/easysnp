@@ -34,3 +34,23 @@ def settings(request):
     panels = [ ajax.load_url('/security/settings.html') ]
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })
+    
+def contacts(request):
+    panels = [ ajax.load_url('/contacts/contacts.html') ]
+    return render_to_response('base.html',
+            {'body': panels, 'title': 'Hello Kitty' })
+    
+def contact(request):
+    panels = [ ajax.load_url('/contacts/contact.html') ]
+    return render_to_response('base.html',
+            {'body': panels, 'title': 'Hello Kitty' })
+    
+def tasks(request):
+    panels = [ ajax.load_url('/tasks/tasks.html') ]
+    return render_to_response('base.html',
+            {'body': panels, 'title': 'Hello Kitty' })
+
+def task(request):
+    panels = [ ajax.load_url('/tasks/task.html') ]
+    return render_to_response('base.html',
+            {'body': panels, 'title': 'Hello Kitty' })
