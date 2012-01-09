@@ -4,73 +4,68 @@ import main.ajax as ajax
 from django.shortcuts import render_to_response
 
 def index(request):
-    panels = [ ajax.load_url('/leads/my_leads.html'),
-               ajax.load_url('/tasks/my_tasks.html') ]
+    panels = [ ajax.call('/leads/my_leads.html'),
+               ajax.call('/tasks/my_tasks.html') ]
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })
 
 def leads(request):
-    panels = [ ajax.load_url('/leads/leads.html') ]
+    panels = [ ajax.call('/leads/leads.html') ]
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })
 
 def lead(request):
-    panels = [ ajax.load_url('/leads/lead.html') ]
+    panels = [ ajax.call('/leads/lead.html') ]
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })
 
 
 def lead_edit(request):
-    panels = [ ajax.load_url('/leads/lead_edit.html') ]
+    panels = [ ajax.call('/leads/lead_edit.html') ]
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })
 
-def login(request):
-    panels = [ ajax.load_url('/security/login.html') ]
-    return render_to_response('base_menuless.html',
-            {'body': panels, 'title': 'Hello Kitty' })
-    
 def settings(request):
-    panels = [ ajax.load_url('/security/settings.html') ]
+    panels = [ ajax.call('/security/settings.html') ]
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })
-    
+
 def contacts(request):
-    panels = [ ajax.load_url('/contacts/contacts.html') ]
+    panels = [ ajax.call('/contacts/contacts.html') ]
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })
-    
+
 def contact(request):
-    panels = [ ajax.load_url('/contacts/contact.html') ]
+    panels = [ ajax.call('/contacts/contact.html') ]
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })
-    
+
 def tasks(request):
-    panels = [ ajax.load_url('/tasks/tasks.html') ]
+    panels = [ ajax.call('/tasks/tasks.html') ]
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })
 
 def task(request):
-    panels = [ ajax.load_url('/tasks/task.html') ]
+    panels = [ ajax.call('/tasks/task.html') ]
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })
 
 def vessels(request):
-    panels = [ ajax.load_url('/vessels/vessels.html') ]
+    panels = [ ajax.call('/vessels/vessels.html') ]
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })
-    
+
 def vessel(request):
-    panels = [ ajax.load_url('/vessels/vessel.html') ]
+    panels = [ ajax.call('/vessels/vessel.html') ]
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })
 
 def inquiries(request):
-    panels = [ ajax.load_url('/inquiries/inquiries.html') ]
+    panels = [ ajax.call('/inquiries/inquiries.html') ]
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })
-    
+
 def inquiry(request):
-    panels = [ ajax.load_url('/inquiries/inquiry.html') ]
+    panels = [ ajax.call('/inquiries/inquiry.html') ]
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })

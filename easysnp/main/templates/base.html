@@ -4,10 +4,12 @@
         {% include "header.html" %}
     </head>
     <body>
-        {% include "menu.html" %}
-        {% for elem in body %}
-            {{ elem|safe }}
-        {% endfor %}
-        {% include "footer.html" %}
+        {% block mainbody %}
+            {% include "menu.html" %}
+            {% for elem in body %}
+                {{ elem|safe }}
+            {% endfor %}
+            {% include "footer.html" %}
+        {% endblock %}
     </body>
 </html>
