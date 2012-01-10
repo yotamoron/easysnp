@@ -1,8 +1,13 @@
 {% extends "base.html" %}
+{% load url from future %}
 
 {% block mainbody %}
-<form name="loginform" action="/account/login/" method="post">{% csrf_token %}
+
+<form action="/accounts/login/?next={{ next }}" method="post">{% csrf_token %}
     <div class="easysnp-login-frame">
+    {% if form.errors %}
+        <p>Your username and password didn't match. Please try again.</p>
+    {% endif %}
     <div class="easysnp-login-subframe"> 
         <h1>
             <span>Welcome Back!</span>
@@ -28,6 +33,7 @@
         <input id="saveEmailEnabled" class="easysnp-rememberbox-checkbox" type="checkbox" value="true" tabindex="3" name="saveEmailEnabled">
         <input type="hidden"value="on" name="_saveEmailEnabled">
         <label class="rememberMe" for="saveEmailEnabled">Remember me</label>
+        <input type="hidden" name="next" value="{{ next }}" />
     </div>
     <input class="easysnp-login-submit-button" type="image" src="/static/sign-in.png" name="image">
     <div class="easysnp-login-action"> 
