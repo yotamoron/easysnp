@@ -10,35 +10,6 @@
 	text-align:right;
 }
 
-ul#list-nav {
-list-style:none;
-margin:10px 5px 10px 10px;
-padding:0;
-#width:525px
-width:800px
-}
-
-
-<!--
--->
-
-ul#list-nav {
-list-style:none;
-margin:10px 5px 10px 10px;
-padding:0;
-#width:525px
-width:800px
-}
-
-ul#list-nav-top {
-list-style:none;
-margin:20px;
-padding:0;
-#width:525px
-width:800px
-}
-
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
     border: 0 none;
     font-family: inherit;
@@ -158,92 +129,6 @@ span.error {
     color: #990000;
     font-weight: bold;
 }
-div.alert {
-    background-color: #FFFFFF;
-    color: #333333;
-    margin: 0 0 15px;
-    min-height: 28px;
-    overflow: hidden;
-    padding: 6px 7px 6px 35px;
-    position: relative;
-}
-div.alert img {
-    display: none;
-}
-div.alert p, div.alert h3 {
-    font-size: 13px;
-    margin: 7px 21px 5px 7px;
-}
-div.alert ul {
-    font-size: 13px;
-    margin: 0 21px 5px 7px;
-}
-div.alert h3 {
-    font-weight: bold;
-}
-div.alert .dismiss {
-    background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll right -1294px transparent;
-    cursor: pointer;
-    display: block;
-    height: 12px;
-    padding: 7px 0 2px;
-    position: absolute;
-    right: 14px;
-    text-indent: -12345px;
-    top: 3px;
-    width: 18px;
-}
-div.alert a:visited {
-    color: #003399;
-}
-div.alert.attention {
-    background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll 7px -723px #FFF5CC;
-}
-div.alert.warning {
-    background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll 7px -723px #FFF5CC;
-}
-div.alert.error {
-    background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll 7px -643px #FFEEEE;
-}
-div.alert.success {
-    background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll 7px -883px #E6F8DD;
-}
-div.alert.notice {
-    background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll 7px -803px #DDF0F8;
-}
-div.alert.error.alert-details, div.errorbox.alert-details {
-    background-image: url("http://static02.linkedin.com/scds/common/u/img/icon/icon_status_fail_26x26.gif");
-    background-position: 7px 7px;
-}
-div.alert.success.alert-details {
-    background-image: url("http://static01.linkedin.com/scds/common/u/img/icon/icon_status_success_26x26.gif");
-    background-position: 7px 7px;
-}
-div.alert.warning.alert-details {
-    background-image: url("http://static02.linkedin.com/scds/common/u/img/icon/icon_status_info_26x26.gif");
-    background-position: 7px 7px;
-}
-div.alert.notice.alert-details, div.alert.attention.alert-details {
-    background-image: url("http://static01.linkedin.com/scds/common/u/img/icon/icon_status_info_blue_26x26.gif");
-    background-position: 7px 7px;
-}
-#notice-privacy {
-    position: relative;
-}
-#notice-privacy p {
-    padding-right: 15px;
-}
-#notice-close {
-    background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll right -1294px transparent;
-    display: block;
-    height: 18px;
-    padding: 7px 0 2px;
-    position: absolute;
-    right: 14px;
-    text-indent: -1000em;
-    top: 3px;
-    width: 18px;
-}
 
 p.check-textarea-message {
     color: #666666 !important;
@@ -266,97 +151,7 @@ p.check-textarea-message.error {
 body {
     background-color: #FFFFFF;
 }
-.global-nav ul, .global-nav li, .global-nav p, .global-nav fieldset, #section-header ul, #section-header li, #section-header p, #section-header, .global-search fieldset, .global-search select, .global-search input, #footer ul, #footer li, #footer p {
-    background: none repeat scroll 0 0 transparent;
-    border: 0 none;
-    list-style-type: none;
-    margin: 0;
-    outline: 0 none;
-    padding: 0;
-    vertical-align: middle;
-}
-.global-nav, #body, #footer {
-    clear: both;
-    margin-left: auto;
-    margin-right: auto;
-    width: 980px;
-}
-.global-nav:after, #body:after, #main:after, #footer:after, .primary:after, .easysnp-wrapper:after {
-    clear: both;
-    content: ".";
-    display: block;
-    height: 0;
-    visibility: hidden;
-}
-.global-nav, #body, #main, #footer {
-}
 
-.global-account {
-    padding: 0 10px;
-    clear: both;
-    content: ".";
-    display: block;
-    height: 0;
-}
-
-.global-nav {
-    font-size: 13px;
-    margin-bottom: 15px;
-}
-.global-nav a, .global-nav a:hover, .global-nav a:visited {
-    color: #006699;
-    text-decoration: none !important;
-}
-.global-nav .logo {
-    display: block;
-    float: left;
-    margin: 6px 10px 0 3px;
-    width: 92px;
-}
-.global-nav .logo a {
-    background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll 0 0 transparent;
-    display: block;
-    height: 22px;
-    text-indent: -12345px;
-}
-.global-nav.guest .logo {
-    padding-bottom: 5px;
-}
-.global-nav .account {
-    float: left;
-    font-size: 11px;
-    margin-top: 15px;
-}
-.global-nav .util {
-    color: #666666;
-    float: right;
-    margin: 15px 3px 5px 8px;
-}
-.global-nav .util li {
-    display: inline;
-    font-size: 11px;
-    padding: 0 2px 0 10px;
-}
-.global-nav .util .nav-rule {
-    display: none;
-}
-.global-nav .util .add-conx {
-    color: #006600;
-}
-.ko .global-nav .util .add-conx {
-    line-height: 1.5;
-}
-.global-nav .util .jump {
-    left: -9999px;
-    position: absolute;
-}
-.global-nav .util .username {
-    background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll 0 -1763px #FFFFFF;
-    padding-left: 12px;
-}
-.js .global-nav .util .signout {
-    display: none;
-}
 .easysnp-bar {
     background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll 0 -470px transparent;
     width: 100%;
@@ -366,210 +161,46 @@ body {
     height: 39px;
     padding: 0 5px;
 }
-.global-nav .bar .nav {
-    margin-left: 5px;
-}
-.global-nav .bar .tab {
-    float: left;
-    font-size: 13px;
-    line-height: 35px;
-    margin: 1px 0 0;
-}
-.global-nav .bar .tab span {
-    display: block;
-    padding: 1px 9px;
-}
-.global-nav .bar .tab:hover, .global-nav .bar .tab.hover {
-    background: none repeat scroll 0 0 #FFFFFF !important;
-    border: 1px solid #016799;
-    box-shadow: 0 3px 10px #888888;
-}
-.global-nav .bar .tab:hover span, .global-nav .bar .tab.hover span {
-    padding: 0 8px;
-}
-.global-nav .bar .hover span, .global-nav .bar li:hover span {
-    background-color: #FFFFFF;
-    position: relative;
-    z-index: 10;
-}
-.global-nav .bar .hover .menu span, .global-nav .bar li:hover .menu span {
-    background-color: transparent;
-    position: static;
-}
-.global-nav .bar .hover .menu .title, .global-nav .bar li:hover .menu .title {
-    padding: 0 5px 5px;
-}
-.global-nav .selected a {
-    color: #2C2C2C !important;
-}
-.global-nav .hover, .global-nav li:hover {
-    position: relative;
-    z-index: 9;
-}
-.global-nav .hover .menu, .global-nav li:hover .menu {
-    display: block;
-}
-.global-nav .menu {
-    background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #016799;
-    box-shadow: 0 6px 10px #888888;
-    display: none;
-    left: -1px;
-    padding: 5px 0;
-    position: absolute;
-    top: 34px;
-    z-index: 4;
-}
-.global-nav .menu li {
-    font-size: 13px;
-    line-height: 1;
-    margin: 0 5px;
-    white-space: nowrap;
-}
-.global-nav .menu li a {
-    color: #006699 !important;
-    display: block;
-    padding: 5px;
-    white-space: nowrap;
-}
-.global-nav .menu li a:hover {
-    background-color: #016799;
-    color: #FFFFFF !important;
-    text-decoration: none;
-}
-.global-nav .menu li a:hover sup {
-    color: #FFFFFF;
-}
-.global-nav .menu li#nav-my-apps {
-    color: #666666;
-    padding-top: 10px;
-}
-.global-nav .menu li.separator {
-    border-top: 1px solid #CCCCCC;
-    margin-top: 4px;
-    padding-top: 4px;
-}
-.global-nav .menu ul {
-    margin: 0;
-    padding: 0;
-}
-.global-nav .menu ul li {
-    margin: 0;
-    padding: 0;
-}
-.global-nav .menu ul li a {
-    padding: 5px 10px;
-}
-.global-nav .util .menu {
-    left: -1px;
-    padding-left: 4px;
-    padding-right: 5px;
-    top: -10px;
-    z-index: 2;
-}
-.global-nav .util .menu .username {
-    background-position: 6px -1759px;
-    display: block;
-    margin-bottom: 5px;
-    padding-left: 18px;
-}
 
-.global-nav .util .menu a.username:hover {
-    background-color: #FFFFFF;
-    color: #006699 !important;
-}
-.global-nav .util .menu li {
-    display: block;
-    font-size: 11px;
-    margin: 0;
-    padding: 0;
-}
-.global-nav .nav-rule {
-    border-top: 1px solid #FFFFFF;
-    display: block;
-    height: 1px;
-    left: 0;
-    line-height: 1px;
-    padding: 0 !important;
-    position: absolute;
-    top: 34px;
-    z-index: 3;
-}
-.nav-primary-shim {
-    background-color: #FFFFFF;
-    border: medium none;
-    height: 1px;
-    left: -9999px;
-    overflow: hidden;
-    position: absolute;
-    visibility: hidden;
-    width: 1px;
-    z-index: 1;
-}
-#nav-primary-inbox-item-total {
-    background: none repeat scroll 0 0 #FF9900;
-    border: 1px solid #CC6600;
-    border-radius: 2px 2px 2px 2px;
-    color: #FFFFFF;
-    display: inline-block;
-    font-size: 11px;
-    line-height: 1;
-    margin-left: 3px;
-    padding: 1px 3px;
-}
-#inbox-received-unread-total {
-    display: inline;
-    padding: 0;
-}
-
-
-<!--
--->
-
-
-
-ul#list-nav li {
-display:inline
-}
-
-ul#list-nav li a {
-text-decoration:none;
-padding:5px 0;
-width:100px;
-color:#eee;
-float:left;
-text-align:center;
-border-left:1px solid #fff;
-}
-
-
-.global-nav:after, #body:after, #main:after, #footer:after, .primary:after, .easysnp-bar .easysnp-wrapper:after {
-    clear: both;
-    content: ".";
-    display: block;
-    height: 0;
-    visibility: hidden;
-}
 
 .easysnp-bar .easysnp-wrapper .easysnp-tab-list .easysnp-tab .easysnp-main-search-box {
 	margin: 10px;
 }
 
+.easysnp-bar .easysnp-wrapper .easysnp-tab-list .easysnp-tab a {
+	text-decoration:none;
+	padding:10px 0;
+	width:100px;
+#	color:#eee;
+	float:left;
+	text-align:center;
+	border-left:1px solid #fff;
+	display:inline
+}
+
+.easysnp-bar .easysnp-wrapper .easysnp-tab-list .easysnp-tab a span {
+	margin: 10px;
+    font-size: 100%;
+    height: 26px;
+    color: #777777;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    #    display:block;
+}
+
+.easysnp-bar .easysnp-wrapper .easysnp-tab-list .easysnp-tab a span:hover {
+    color: #3399cc;
+    text-decoration: none !important;
+}
+
+
 .easysnp-bar .easysnp-wrapper .easysnp-tab-list {
 #    background: url("http://static02.linkedin.com/scds/common/u/img/bg/bg_sprites_tabs.png") repeat-x scroll 0 3px transparent;
     height: 26px;
-    margin-bottom: 10px;
+#    margin-bottom: 10px;
 }
 
-.easysnp-bar .easysnp-wrapper .easysnp-tab-list ul {
-    font-size: 85%;
-    height: 26px;
-    list-style: none outside none;
-    margin: 0 0 0 17px;
-    overflow: hidden;
-    padding: 0;
-    white-space: nowrap;
-}
 .easysnp-bar .easysnp-wrapper .easysnp-tab-list li, .easysnp-bar .easysnp-wrapper .easysnp-tab-list li a, .easysnp-bar .easysnp-wrapper .easysnp-tab-list li strong {
     display: block;
     float: left;
@@ -590,15 +221,12 @@ border-left:1px solid #fff;
     margin: 10px
 }
 .easysnp-bar .easysnp-wrapper .easysnp-tabs li.selected a, .easysnp-bar .easysnp-wrapper .easysnp-tabs li.selected strong {
-    background: url("http://static02.linkedin.com/scds/common/u/img/bg/bg_sprites_tabs.png") no-repeat scroll 100% -100px transparent;
+#    background: url("http://static02.linkedin.com/scds/common/u/img/bg/bg_sprites_tabs.png") no-repeat scroll 100% -100px transparent;
     color: #CC6600;
 }
-.easysnp-bar .easysnp-wrapper .easysnp-tabs li.disabled a, .easysnp-bar .easysnp-wrapper .easysnp-tabs li.disabled a:hover *, .easysnp-bar .easysnp-wrapper .easysnp-tabs li.disabled strong {
-    color: #CCCCCC;
-    cursor: text;
-}
+
 .easysnp-bar .easysnp-wrapper .easysnp-tabs li strong {
-    background: url("http://static02.linkedin.com/scds/common/u/img/bg/bg_sprites_tabs.png") no-repeat scroll 100% -47px transparent;
+#    background: url("http://static02.linkedin.com/scds/common/u/img/bg/bg_sprites_tabs.png") no-repeat scroll 100% -47px transparent;
     color: #777777;
     font-weight: bold;
     padding: 8px 14px 6px;
@@ -634,13 +262,13 @@ border-left:1px solid #fff;
 }
 
 .easysnp-bar {
- 	background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll 0 -470px transparent;
+# 	background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll 0 -470px transparent;
     width: 100%;
     margin: 16px 140px 0;   
 }
 
 .easysnp-bar .easysnp-wrapper {
-    background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll 0 -510px transparent;
+#    background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll 0 -510px transparent;
     height: 39px;
     padding: 0 5px;
     margin: 16px 140px 0 0;
