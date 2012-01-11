@@ -527,21 +527,68 @@ body {
 }
 
 .easysnp-header .easysnp-tools {
-	float: right;
-	width:280px;
-	word-spacing:6px;
-	font-size:100%;
-	padding-right:100px;
-	padding-top:0px;
-	white-space:nowrap;
-	text-align:right;
+        float: right;
+        width:280px;
+        word-spacing:6px;
+        font-size:100%;
+        padding-right:20px;
+        padding-top:10px;
+        white-space:nowrap;
+        text-align:right;
 }
 
-.easysnp-header .easysnp-tools img{
+.easysnp-header .easysnp-tools img {
 	width: 32px;
 	height: 32px;
 	border: 0;
+	background-repeat: no-repeat;
+	display: block;
 }
+
+.easysnp-header .easysnp-tools .easysnp-tools-img {
+	width: 32px;
+	height: 32px;
+	float: left;
+	margin: 10px 0px 0px 10px;
+	padding-right: 10px;
+}
+
+
+#easysnp-tools-add-contact {
+	background-image: url(/static/add_contact.png);
+}
+
+#easysnp-tools-edit {
+	background-image: url(/static/edit.png);
+}
+
+#easysnp-tools-delete {
+	background-image: url(/static/delete.png);
+}
+#easysnp-tools-add-lead {
+	background-image: url(/static/add_lead.png);
+}
+
+#easysnp-tools-save {
+	background-image: url(/static/save.png);
+}
+
+#easysnp-tools-add-task {
+	background-image: url(/static/add_new_task.gif);
+}
+
+#easysnp-tools-add-note {
+	background-image: url(/static/add_note.jpg);
+}
+
+#easysnp-tools-add-vessel {
+	background-image: url(/static/new_vessel.png);
+}
+
+#easysnp-tools-add-inquiry {
+	background-image: url(/static/new_inquiry.png);
+}
+
 
 /* Look and feel of select box */
 .easysnp-list .selectbox
