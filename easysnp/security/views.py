@@ -8,3 +8,4 @@ def login(request):
 
 def settings(request):
     return render_to_response('settings.html', {})
+

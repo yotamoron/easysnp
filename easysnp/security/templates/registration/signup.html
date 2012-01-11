@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load url from future %}
+
+{% block mainbody %}
+
+<form action="/accounts/signup/?next={{ next }}" method="post">{% csrf_token %}
+    <div class="easysnp-login-frame">
+    {% if form.errors %}
+        <p>Error in your username and password. Please try again.</p>
+    {% endif %}
+    <div class="easysnp-login-subframe"> 
+        <h1>
+            <span>Welcome to EasySnP!</span>
+        </h1>
+        <br>
+        <span>Please sign up into EasySnP.</span>
+        <br>
+    </div>
+    <div class="easysnp-login">
+        <h1><span><strong>Name</strong></span></h1>
+ 		<div class="easysnp-login-input-box"> {{ form.name }} </div>
+        <br>
+        <br>
+        <h1><span><strong>Email</strong></span></h1>
+ 		<div class="easysnp-login-input-box"> {{ form.email }} </div>
+        <br>
+        <br>       
+        <h1><span><strong>Account Name (optional)</strong></span></h1>
+        <div class="easysnp-login-input-box"> {{ form.account }} </div>
+        <br>
+        <br>
+    </div>
+    <input class="easysnp-login-submit-button" type="image" src="/static/signup.png" name="image">
+</div>
+</form>
+{% endblock  %}
