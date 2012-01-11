@@ -137,7 +137,7 @@ p.check-textarea-message {
     margin: 2px 0 !important;
 }
 p.check-textarea-message.error {
-    background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll 0 -968px transparent;
+    background: url(/static/easysnp_sprite.png) no-repeat scroll 0 -968px transparent;
     color: #990000 !important;
     padding: 2px 0 2px 15px !important;
 }
@@ -153,11 +153,11 @@ body {
 }
 
 .easysnp-bar {
-    background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll 0 -470px transparent;
+    background: url(/static/easysnp_sprite.png) no-repeat scroll 0 -470px transparent;
     width: 100%;
 }
 .easysnp-bar .easysnp-wrapper {
-    background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll 0 -510px transparent;
+    background: url(/static/easysnp_sprite.png) no-repeat scroll 0 -510px transparent;
     height: 39px;
     padding: 0 5px;
 }
@@ -196,7 +196,6 @@ body {
 
 
 .easysnp-bar .easysnp-wrapper .easysnp-tab-list {
-#    background: url("http://static02.linkedin.com/scds/common/u/img/bg/bg_sprites_tabs.png") repeat-x scroll 0 3px transparent;
     height: 26px;
 #    margin-bottom: 10px;
 }
@@ -206,11 +205,9 @@ body {
     float: left;
 }
 .easysnp-bar .easysnp-wrapper .easysnp-tabs li {
-#    background: url("http://static02.linkedin.com/scds/common/u/img/bg/bg_sprites_tabs.png") no-repeat scroll 0 -47px transparent;
     padding: 0;
 }
 .easysnp-bar .easysnp-wrapper .easysnp-tabs li.selected {
-    background: url("http://static02.linkedin.com/scds/common/u/img/bg/bg_sprites_tabs.png") no-repeat scroll 0 -100px #FFFFFF;
     border-top: 1px solid #CCCCCC;
 }
 .easysnp-bar .easysnp-wrapper .easysnp-tabs li a {
@@ -221,12 +218,10 @@ body {
     margin: 10px
 }
 .easysnp-bar .easysnp-wrapper .easysnp-tabs li.selected a, .easysnp-bar .easysnp-wrapper .easysnp-tabs li.selected strong {
-#    background: url("http://static02.linkedin.com/scds/common/u/img/bg/bg_sprites_tabs.png") no-repeat scroll 100% -100px transparent;
     color: #CC6600;
 }
 
 .easysnp-bar .easysnp-wrapper .easysnp-tabs li strong {
-#    background: url("http://static02.linkedin.com/scds/common/u/img/bg/bg_sprites_tabs.png") no-repeat scroll 100% -47px transparent;
     color: #777777;
     font-weight: bold;
     padding: 8px 14px 6px;
@@ -262,13 +257,13 @@ body {
 }
 
 .easysnp-bar {
-# 	background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll 0 -470px transparent;
+# 	background: url(static/easysnp_sprite.png) no-repeat scroll 0 -470px transparent;
     width: 100%;
     margin: 16px 140px 0;   
 }
 
 .easysnp-bar .easysnp-wrapper {
-#    background: url("http://static01.linkedin.com/scds/common/u/img/sprite/sprite_global_v6.png") no-repeat scroll 0 -510px transparent;
+#    background: url(static/easysnp_sprite.png) no-repeat scroll 0 -510px transparent;
     height: 39px;
     padding: 0 5px;
     margin: 16px 140px 0 0;
