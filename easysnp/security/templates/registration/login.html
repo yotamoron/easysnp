@@ -5,44 +5,43 @@
 {% block mainbody %}
 
 <form action="/accounts/login/?next={{ next }}" method="post">{% csrf_token %}
-    <div class="easysnp-login-frame">
-    {% if form.errors %}
-        <p>Your username and password didn't match. Please try again.</p>
-    {% endif %}
-    <div class="easysnp-login-subframe"> 
-        <h1>
-            <span>Welcome Back!</span>
-        </h1>
-        <br>
-        <span>Please sign into EasySnP with your existing login.</span>
-        <br>
-    </div>
-    <div class="easysnp-login">
-
-        <h1><span><strong>Username</strong></span></h1>
- 		{{ form.username|add_class:"easysnp-login-input-box" }}
-        <br>
-        <br>
-        <h1><span><strong>Password</strong></span></h1>
-        {{ form.password|add_class:"easysnp-login-input-box" }}
-        <br>
-        <br>
-
-        <p><b>We still need to handle remember me thingy in http://djangosnippets.org/snippets/1881/</b></p>
-
-        <div class="easysnp-rememberbox" id="rememberBox">
-        <input id="saveEmailEnabled" class="easysnp-rememberbox-checkbox" type="checkbox" value="true" tabindex="3" name="saveEmailEnabled">
-        <input type="hidden"value="on" name="_saveEmailEnabled">
-        <label class="rememberMe" for="saveEmailEnabled">Remember me</label>
-        <input type="hidden" name="next" value="{{ next }}" />
-    </div>
-    <input class="easysnp-login-submit-button" type="image" src="/static/sign-in.png" name="image">
-    <div class="easysnp-login-action"> 
-    	<a href="#">Forgot your password?</a>
-    </div>
-    <div class="easysnp-login-action">
-        <a href="#">Free sign-up</a>
-    </div>
-</div>
+	<div class="easysnp-login-frame">
+	    {% if form.errors %}
+	        <p>Your username and password didn't match. Please try again.</p>
+	    {% endif %}
+	    <div class="easysnp-login-subframe"> 
+	        <h1>
+	            <span>Welcome Back!</span>
+	        </h1>
+	        <br>
+	        <span>Please sign into EasySnP with your existing login.</span>
+	        <br>
+	    </div>
+	    <div class="easysnp-login">
+	        <h1><span><strong>Username</strong></span></h1>
+	 		{{ form.username|add_class:"easysnp-login-input-box" }}
+	        <br>
+	        <br>
+	        <h1><span><strong>Password</strong></span></h1>
+	        {{ form.password|add_class:"easysnp-login-input-box" }}
+	        <br>
+	        <br>
+	
+	        <p><b>We still need to handle remember me thingy in http://djangosnippets.org/snippets/1881/</b></p>
+	
+	        <div class="easysnp-rememberbox" id="rememberBox">
+	        <input id="saveEmailEnabled" class="easysnp-rememberbox-checkbox" type="checkbox" value="true" tabindex="3" name="saveEmailEnabled">
+	        <input type="hidden"value="on" name="_saveEmailEnabled">
+	        <label class="rememberMe" for="saveEmailEnabled">Remember me</label>
+	        <input type="hidden" name="next" value="{{ next }}" />
+	    </div>
+    	<input class="easysnp-login-submit-button" type="image" src="/static/sign-in.png" name="image">
+    	<div class="easysnp-login-action"> 
+    		<a href="#">Forgot your password?</a>
+    	</div>
+    	<div class="easysnp-login-action">
+        	<a href="#">Free sign-up</a>
+    	</div>
+	</div>
 </form>
 {% endblock  %}
