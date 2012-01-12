@@ -13,3 +13,9 @@ Directory structure
       template files.
       NOTE: files with the same name in different templates static directories 
       have undefined behaviour
+
+Important link paths:
+=====================
+Password change: /accounts/password/change/
+Registration: /accounts/register/
+Login/Logout: /accounts/login/ /accounts/logout/

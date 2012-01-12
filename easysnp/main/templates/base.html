@@ -1,6 +1,9 @@
 <!doctype html>
 <html>
     <head>
+
+        <title>{% block title %}{{ title }}{% endblock %}</title>
+
         {% block header %}
             {% include "header.html" %}
         {% endblock %}

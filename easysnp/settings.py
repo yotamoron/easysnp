@@ -87,7 +87,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'k&4d$dt&5fz$)bw(-@tj$q9#zjbzb4!!*1w%3)#hqs&6x9_c@t'
+SECRET_KEY = 'bewhaha&5fz$)bw(-@tj$q9#zjbzb!4!*1w%3)#hqs&6x9_c@t'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -116,12 +116,18 @@ BASIC_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     # Uncomment the next line to enable the admin:
-    'django.contrib.admin',
+    # XXX NOTE: Uncommenting the following line fucks up the password
+    # change/reset mechanism and directs all the request to the admin
+    # change/reset pages.
+    #'django.contrib.admin',
+
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'registration',
     'widget_tweaks',
+    'django.contrib.humanize',
 )
 
 EXTRA_APPS = (
@@ -167,4 +173,13 @@ LOGGING = {
 
 ACCOUNT_ACTIVATION_DAYS = 2
 LOGIN_REDIRECT_URL = '/'
+
+### THIS IS FOR TESTING PURPOSE ONLY - SHOULD BE REMOVED IN PRODUCTION ###
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025
+EMAIL_HOST_USER =''
+EMAIL_HOST_PASSWORD =''
+EMAIL_USE_TLS = False
+DEFAULT_FROM_EMAIL = 'testing@example.com'
+### THIS IS FOR TESTING PURPOSE ONLY - SHOULD BE REMOVED IN PRODUCTION ###
 
