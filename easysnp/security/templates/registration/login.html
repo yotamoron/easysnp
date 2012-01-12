@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load url from future %}
+{% load widget_tweaks %}
 
 {% block mainbody %}
 
@@ -19,11 +20,11 @@
     <div class="easysnp-login">
 
         <h1><span><strong>Username</strong></span></h1>
- 		<div class="easysnp-login-input-box"> {{ form.username }} </div>
+ 		{{ form.username|add_class:"easysnp-login-input-box" }}
         <br>
         <br>
         <h1><span><strong>Password</strong></span></h1>
-        <div class="easysnp-login-input-box"> {{ form.password }} </div>
+        {{ form.password|add_class:"easysnp-login-input-box" }}
         <br>
         <br>
 
