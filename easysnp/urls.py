@@ -21,9 +21,17 @@ urlpatterns = patterns('',
 
 for app in EXTRA_APPS:
         try:
+            PRIO_APP = False
             mod = __import__("easysnp." + app + ".urls", globals(), locals(),
-                    ['urlpatterns'], -1)
-            urlpatterns += mod.urlpatterns
+                    ['urlpatterns, PRIO_APP'], -1)
+            try:
+                PRIO_APP = mod.PRIO_APP
+            except AttributeError:
+                pass
+            if PRIO_APP:
+                urlpatterns = mod.urlpatterns + urlpatterns
+            else:
+                urlpatterns = urlpatterns + mod.urlpatterns
         except ImportError:
             # application doesn't have its own urls module - no worries.
             pass

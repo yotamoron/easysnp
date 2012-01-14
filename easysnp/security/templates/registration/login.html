@@ -27,21 +27,19 @@
 	        <br>
 	        <br>
 	
-	        <p><b>We still need to handle remember me thingy in http://djangosnippets.org/snippets/1881/</b></p>
-	
 	        <div class="easysnp-rememberbox" id="rememberBox">
-	        <input id="saveEmailEnabled" class="easysnp-rememberbox-checkbox" type="checkbox" value="true" tabindex="3" name="saveEmailEnabled">
-	        <input type="hidden"value="on" name="_saveEmailEnabled">
-	        <label class="rememberMe" for="saveEmailEnabled">Remember me</label>
-	        <input type="hidden" name="next" value="{{ next }}" />
-	    </div>
-    	<input class="easysnp-login-submit-button" type="image" src="/static/sign-in.png" name="image">
-    	<div class="easysnp-login-action"> 
-    		<a href="/accounts/password/reset/">Forgot your password?</a>
-    	</div>
-    	<div class="easysnp-login-action">
-        	<a href="/accounts/register/">Free sign-up</a>
-    	</div>
+                {{ form.remember_me|add_class:"easysnp-rememberbox-checkbox" }}
+                <label class="rememberMe" for="remember_me">Remember me</label>
+                <input type="hidden" name="next" value="{{ next }}" />
+            </div>
+            <input class="easysnp-login-submit-button" type="image" src="/static/sign-in.png" name="image">
+            <div class="easysnp-login-action"> 
+                <a href="/accounts/password/reset/">Forgot your password?</a>
+            </div>
+            <div class="easysnp-login-action">
+                <a href="/accounts/register/">Free sign-up</a>
+            </div>
+        </div>
 	</div>
 </form>
 {% endblock  %}
