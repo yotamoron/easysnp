@@ -8,8 +8,10 @@ from django.contrib.sites.models import RequestSite, Site
 from django.http import HttpResponseRedirect
 from django.template import RequestContext
 from django.contrib.auth import login
+from django.contrib.auth.decorators import login_required
 from forms import AuthenticationRememberMeForm
 
+@login_required
 def settings(request):
     return render_to_response('settings.html', {})
 
