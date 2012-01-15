@@ -12,9 +12,18 @@ def leads(request):
     return render_to_response('leads.html', {})
 
 @login_required
-def lead(request):
-    return render_to_response('lead.html', {})
+def view(request, oid):
+    return render_to_response('view_lead.html', {})
 
 @login_required
-def lead_edit(request):
-    return render_to_response('lead_edit.html', {})
+def edit(request, oid):
+    return render_to_response('edit_lead.html', {})
+
+@login_required
+def delete(request, oid):
+    return render_to_response('delete_lead.html', {})
+
+@login_required
+def new(request):
+    return render_to_response('new_lead.html', {})
+

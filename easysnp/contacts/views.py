@@ -8,9 +8,17 @@ def contacts(request):
     return render_to_response('contacts.html', {})
 
 @login_required
-def contact(request):
-    return render_to_response('contact.html', {})
+def view(request, oid):
+    return render_to_response('view_contact.html', {})
 
 @login_required
-def contact_edit(request):
-    return render_to_response('contact_edit.html', {})
+def edit(request, oid):
+    return render_to_response('edit_contact.html', {})
+
+@login_required
+def delete(request, oid):
+    return render_to_response('delete_contact.html', {})
+
+@login_required
+def new(request):
+    return render_to_response('new_contact.html', {})

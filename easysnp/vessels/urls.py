@@ -1,8 +1,8 @@
 
 from django.conf.urls.defaults import patterns, include, url
+from common.consts import UUID_PAT
+from common.patterns import app_patterns
 
-urlpatterns = patterns('vessels.views',
-        url(r'^vessels/vessels.html', 'vessels'),
-        url(r'^vessels/vessel.html', 'vessel'),
-        url(r'^vessels/vessel_edit.html', 'vessel_edit')
-)
+urlpatterns = app_patterns('vessels.views', 'vessels')
+urlpatterns += patterns('vessels.views',
+        url(r'^vessels/vessels.html', 'vessels'))

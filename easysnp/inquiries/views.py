@@ -8,9 +8,18 @@ def inquiries(request):
     return render_to_response('inquiries.html', {})
 
 @login_required
-def inquiry(request):
-    return render_to_response('inquiry.html', {})
+def view(request, oid):
+    return render_to_response('view_inquiry.html', {})
 
 @login_required
-def inquiry_edit(request):
-    return render_to_response('inquiry_edit.html', {})
+def edit(request, oid):
+    return render_to_response('edit_inquiry.html', {})
+
+@login_required
+def delete(request, oid):
+    return render_to_response('delete_inquiry.html', {})
+
+@login_required
+def new(request):
+    return render_to_response('new_inquiry.html', {})
+

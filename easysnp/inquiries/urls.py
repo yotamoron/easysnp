@@ -1,8 +1,8 @@
 
 from django.conf.urls.defaults import patterns, include, url
+from common.consts import UUID_PAT
+from common.patterns import app_patterns
 
-urlpatterns = patterns('inquiries.views',
-        url(r'^inquiries/inquiries.html', 'inquiries'),
-        url(r'^inquiries/inquiry.html', 'inquiry'),
-        url(r'^inquiries/inquiry_edit.html', 'inquiry_edit')
-)
+urlpatterns = app_patterns('inquiries.views', 'inquiries')
+urlpatterns += patterns('inquiries.views',
+        url(r'^inquiries/inquiries.html', 'inquiries'))
