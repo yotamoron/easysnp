@@ -38,3 +38,21 @@ MySQL stuff
     - Email: yotamoron@yahoo.com
     - Password: nevovo04
 
+High level
+==========
+- The main application is driving the site. The application's pages 
+  are exposed and handled by it
+- Other applications are embedded within one of main's pages
+
+Adding an application
+=====================
+- Run in the root directory
+	% python manage.py startap <App name>
+- Add the application in settings.py
+- Create a templates direcotry in the new application. The templates that go 
+  in the templates directory are not a full page templates but only the part
+  in the page that this particular app in handling
+- Modify urls.py so it will expose the basic API (delete, new etc)
+- Create a template stub for each basic API
+- Create the stubs for each function in views.py
+
