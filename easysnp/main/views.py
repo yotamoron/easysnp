@@ -60,24 +60,24 @@ def files(request):
 # view an existing object, delete an existing object
 @login_required
 def view(request, app, oid):
-    panels = [ ajax.call('/%s/view.html/%s/' % (app, oid)) ]
+    panels = [ ajax.call('/%s/view/%s/' % (app, oid)) ]
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })
 
 @login_required
 def edit(request, app, oid):
-    panels = [ ajax.call('/%s/edit.html/%s/' % (app, oid)) ]
+    panels = [ ajax.call('/%s/edit/%s/' % (app, oid)) ]
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })
 
 @login_required
 def delete(request, app, oid):
-    panels = [ ajax.call('/%s/delete.html/%s/' % (app, oid)) ]
+    panels = [ ajax.call('/%s/delete/%s/' % (app, oid)) ]
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })
 
 @login_required
 def new(request, app):
-    panels = [ ajax.call('/%s/new.html' % (app)) ]
+    panels = [ ajax.call('/%s/new' % (app)) ]
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })
