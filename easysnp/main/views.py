@@ -11,43 +11,43 @@ def index(request):
     panels = [ ajax.call('/leads/my_leads.html'),
                ajax.call('/tasks/my_tasks.html') ]
     return render_to_response('base.html',
-            {'body': panels, 'title': 'Hello Kitty' })
+            {'body': panels, 'title': 'EasySnP' })
 
 @login_required
 def leads(request):
     panels = [ ajax.call('/leads/leads.html') ]
     return render_to_response('base.html',
-            {'body': panels, 'title': 'Hello Kitty' })
+            {'body': panels, 'title': 'Leads' })
 
 @login_required
 def settings(request):
     panels = [ ajax.call('/security/settings.html') ]
     return render_to_response('base.html',
-            {'body': panels, 'title': 'Hello Kitty' })
+            {'body': panels, 'title': 'Settings' })
 
 @login_required
 def contacts(request):
     panels = [ ajax.call('/contacts/contacts.html') ]
     return render_to_response('base.html',
-            {'body': panels, 'title': 'Hello Kitty' })
+            {'body': panels, 'title': 'Contacts' })
 
 @login_required
 def tasks(request):
     panels = [ ajax.call('/tasks/tasks.html') ]
     return render_to_response('base.html',
-            {'body': panels, 'title': 'Hello Kitty' })
+            {'body': panels, 'title': 'Tasks' })
 
 @login_required
 def vessels(request):
     panels = [ ajax.call('/vessels/vessels.html') ]
     return render_to_response('base.html',
-            {'body': panels, 'title': 'Hello Kitty' })
+            {'body': panels, 'title': 'Vessels' })
 
 @login_required
 def inquiries(request):
     panels = [ ajax.call('/inquiries/inquiries.html') ]
     return render_to_response('base.html',
-            {'body': panels, 'title': 'Hello Kitty' })
+            {'body': panels, 'title': 'Inquiries' })
 
 # The following functions handle the 4 basic actions that can
 # be applied on an object: create a new object, edit an existing object,
