@@ -19,3 +19,22 @@ Important link paths:
 Password change: /accounts/password/change/
 Registration: /accounts/register/
 Login/Logout: /accounts/login/ /accounts/logout/
+
+MySQL stuff
+===========
+- Make sure that mysql is installed and running
+- User root, password gogobilbi:
+  http://www.cyberciti.biz/faq/mysql-reset-lost-root-password/
+- Create a easysnp database:
+    % mysql -u root -p mysql
+    mysql> CREATE DATABASE easysnp;
+    mysql> quit
+- Create all needed tables:
+    % python manage.py syncdb
+- Run local mail server:
+    % python -m smtpd -n -c DebuggingServer localhost:1025
+- Create superuser:
+    - Username: admin
+    - Email: yotamoron@yahoo.com
+    - Password: nevovo04
+
