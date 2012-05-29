@@ -49,6 +49,12 @@ def inquiries(request):
     return render_to_response('base.html',
             {'body': panels, 'title': 'Inquiries' })
 
+@login_required
+def files(request):
+    panels = [ ajax.call('/files/files.html') ]
+    return render_to_response('base.html',
+            {'body': panels, 'title': 'Files' })
+
 # The following functions handle the 4 basic actions that can
 # be applied on an object: create a new object, edit an existing object,
 # view an existing object, delete an existing object

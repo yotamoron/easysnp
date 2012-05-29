@@ -137,6 +137,7 @@ EXTRA_APPS = (
     'contacts',
     'vessels',
     'inquiries',
+    'files',
     # main application comes last since it will catch stuff that other
     # applications don't handle
     'main',

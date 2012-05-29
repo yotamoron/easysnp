@@ -3,6 +3,7 @@ from django.conf.urls.defaults import patterns, include, url
 from common.consts import UUID_PAT
 
 urlpatterns = patterns('main.views',
+        url(r'^files.html', 'files'),
         url(r'^leads.html', 'leads'),
         url(r'^settings.html', 'settings'), # I think this should go away
         url(r'^contacts.html', 'contacts'),
