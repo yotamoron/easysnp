@@ -79,5 +79,6 @@ def delete(request, app, oid):
 @login_required
 def new(request, app):
     panels = [ ajax.call('/%s/new' % (app)) ]
+    request.session['new_referer'] = request.get_full_path()
     return render_to_response('base.html',
             {'body': panels, 'title': 'Hello Kitty' })

@@ -1,7 +1,16 @@
 # Create your views here.
 
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
+from django.template import RequestContext
+
+from django import forms
+
+class UploadFileForm(forms.Form):
+    title = forms.CharField(max_length=50)
+    file  = forms.FileField()
+    referrer = forms.CharField()
 
 @login_required
 def files(request):
@@ -21,5 +30,13 @@ def delete(request, oid):
 
 @login_required
 def new(request):
-    return render_to_response('new_file.html', {})
+    if request.method == 'POST':
+        form = UploadFileForm(request.POST, request.FILES)
+        if form.is_valid():
+            #handle_uploaded_file(request.FILES['file'])
+            return HttpResponseRedirect(request.session['new_referer'])
+    else:
+        form = UploadFileForm()
+    return render_to_response('new_file.html', {'form': form},
+            RequestContext(request))
 
